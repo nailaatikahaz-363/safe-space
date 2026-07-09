@@ -11,8 +11,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
     const userMsg = document.createElement('div');
     userMsg.style.textAlign = 'right';
     userMsg.style.margin = '12px 0';
-    userMsg.innerHTML = `<span style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 12px 16px; border-radius: 14px; border-bottom-right-radius: 4px; display: inline-block; max-width: 85%; border: 1px solid rgba(56, 189, 248, 0.2); text-align: left; font-size: 0.95rem;">${isiCurhat}</span>`;
-    chatBox.appendChild(userMsg);
+    userMsg.innerHTML = `<span style="background: rgba(52, 211, 153, 0.08); color: #a7f3d0; padding: 12px 16px; border-radius: 14px; border-bottom-right-radius: 4px; display: inline-block; max-width: 85%; border: 1px solid rgba(52, 211, 153, 0.2); text-align: left; font-size: 0.95rem;">${isiCurhat}</span>`;
 
     // 2. Efek teks penenang otomatis dari aplikasi (Sisi Kiri)
     setTimeout(() => {
