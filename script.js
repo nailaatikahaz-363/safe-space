@@ -19,7 +19,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
         const systemMsg = document.createElement('p');
         systemMsg.className = 'bot-msg';
         systemMsg.style.marginTop = '12px';
-        systemMsg.innerHTML = `<em>"Terima kasih sudah mau berbagi cerita beratmu hari ini. Curhatanmu sudah terkirim dan disimpan dengan aman di Ruang Teduh. Tarik napas dalam-dalam, kamu sudah melakukan yang terbaik..."</em>`;
+        systemMsg.innerHTML = `<em>"Terima kasih sudah mau berbagi cerita beratmu hari ini. Curhatanmu sudah terkirim dan disimpan dengan aman di Safe Space. Tarik napas dalam-dalam, kamu sudah melakukan yang terbaik... This is your safe space 🩵"</em>`;
         chatBox.appendChild(systemMsg);
         chatBox.scrollTop = chatBox.scrollHeight;
     }, 1000);
