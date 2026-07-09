@@ -7,32 +7,32 @@
 }
 
 body {
-    background: radial-gradient(circle at top right, #0b1528, #050914); /* Gradasi biru gelap elegan */
+    background: radial-gradient(circle at top right, #0e1d17, #050a08); /* Gradasi hijau hutan gelap yang premium & teduh */
     color: #e2e8f0;
     line-height: 1.6;
     scroll-behavior: smooth;
     min-height: 100vh;
 }
 
-/* Navigasi Modern */
+/* Navigasi Modern (Glassmorphism Hijau) */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: rgba(5, 9, 20, 0.8);
+    background-color: rgba(5, 10, 8, 0.8);
     backdrop-filter: blur(12px); /* Efek kaca transparan premium */
     -webkit-backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #38bdf8; /* Biru muda cerah */
+    color: #a7f3d0; /* Warna hijau mint muda cerah */
     letter-spacing: -0.5px;
 }
 
@@ -46,8 +46,8 @@ body {
 }
 
 .nav-links a.active, .nav-links a:hover {
-    color: #38bdf8;
-    text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    color: #34d399; /* Hijau zamrud adem */
+    text-shadow: 0 0 15px rgba(52, 211, 153, 0.4);
 }
 
 /* Hero Section (Judul Utama) */
@@ -67,7 +67,7 @@ body {
 }
 
 .neon-text {
-    background: linear-gradient(135deg, #38bdf8, #0369a1); /* Efek teks gradasi biru murni */
+    background: linear-gradient(135deg, #a7f3d0, #10b981); /* Teks gradasi hijau adem murni */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -85,15 +85,15 @@ body {
 }
 
 .chat-card {
-    background: rgba(15, 23, 42, 0.6); /* Semi transparan */
-    border: 1px solid rgba(56, 189, 248, 0.15); /* Border biru tipis */
+    background: rgba(16, 29, 24, 0.5); /* Semi transparan hijau botol */
+    border: 1px solid rgba(52, 211, 153, 0.15); /* Border hijau tipis */
     border-radius: 24px;
     max-width: 650px;
     margin: 0 auto;
     padding: 30px;
     backdrop-filter: blur(8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
-                0 0 50px rgba(56, 189, 248, 0.03); /* Glow biru halus di sekitar kotak */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
+                0 0 50px rgba(52, 211, 153, 0.03); /* Glow hijau halus di sekitar kotak */
 }
 
 .chat-card h2 {
@@ -112,6 +112,108 @@ body {
     margin-bottom: 20px;
 }
 
+/* Box Tempat Teks Muncul */
+.chat-box {
+    background: #040806; /* Sangat gelap agar teks curhat nyaman dibaca */
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    height: 260px;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* Gaya Balasan Otomatis Sistem */
+.bot-msg {
+    color: #a7f3d0;
+    font-style: italic;
+    background: rgba(20, 36, 30, 0.7); /* Background bubble chat bot hijau teduh */
+    padding: 12px 16px;
+    border-radius: 14px;
+    border-bottom-left-radius: 4px; /* Sudut balon chat kiri */
+    display: inline-block;
+    max-width: 85%;
+    font-size: 0.95rem;
+    border: 1px solid rgba(52, 211, 153, 0.05);
+}
+
+/* Kotak Input Ketikan */
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #040806;
+    border: 1px solid rgba(52, 211, 153, 0.1);
+    border-radius: 14px;
+    color: #f8fafc;
+    padding: 16px;
+    resize: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #34d399;
+    box-shadow: 0 0 15px rgba(52, 211, 153, 0.15);
+}
+
+/* Tombol Kirim Mewah Tema Hijau */
+.btn-send {
+    width: 100%;
+    background: linear-gradient(135deg, #10b981, #047857);
+    border: none;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.btn-send:hover {
+    transform: translateY(-1.5px);
+    background: linear-gradient(135deg, #34d399, #10b981);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Section Penjelas Bagian Bawah */
+.info-section {
+    max-width: 650px;
+    margin: 20px auto 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.info-section h3 {
+    color: #34d399;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.info-section p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* Custom Scrollbar Mulus Hijau */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #040806;
+}
+::-webkit-scrollbar-thumb {
+    background: #111827;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #34d399;
+    }
 /* Box Tempat Teks Muncul */
 .chat-box {
     background: #020617; /* Lebih gelap dari kartu untuk kedalaman visual */
