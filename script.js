@@ -12,7 +12,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
     userMsg.style.textAlign = 'right';
     userMsg.style.margin = '12px 0';
     userMsg.innerHTML = `<span style="background: rgba(52, 211, 153, 0.08); color: #a7f3d0; padding: 12px 16px; border-radius: 14px; border-bottom-right-radius: 4px; display: inline-block; max-width: 85%; border: 1px solid rgba(52, 211, 153, 0.2); text-align: left; font-size: 0.95rem;">${isiCurhat}</span>`;
-
+    chatBox.appendChild(userMsg)
     // 2. Efek teks penenang otomatis dari aplikasi (Sisi Kiri)
     setTimeout(() => {
         const systemMsg = document.createElement('p');
