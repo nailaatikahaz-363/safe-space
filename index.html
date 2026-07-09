@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Space - Lepaskan Bebanmu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigasi Atas (Glassmorphism) -->
+    <nav class="navbar">
+        <div class="logo">🌿 Safe Space</div>
+        <div class="nav-links">
+            <a href="#tentang">Tentang</a>
+            <a href="#curhat" class="active">Mulai Curhat</a>
+        </div>
+    </nav>
+
+    <!-- Bagian Judul Utama -->
+    <header class="hero">
+        <h1 class="hero-title">Lepaskan Bebanmu Jadi <span class="neon-text">Ketenangan</span></h1>
+        <p class="hero-desc">
+            Kamu sudah melangkah sejauh ini dengan sangat hebat. Tak apa jika hari ini terasa berat. 
+            Tuliskan apa saja yang mengganjal di hatimu di bawah ini tanpa takut dihakimi. 
+            Semua ceritamu akan tertampung dengan aman dan rahasia.
+        </p>
+    </header>
+
+    <!-- Kotak Utama Tempat Curhat -->
+    <main id="curhat" class="main-content">
+        <div class="chat-card">
+            <h2>📥 Kotak Penampung Curhat</h2>
+            <p class="card-desc">Tumpahkan keluh kesahmu di sini secara anonim:</p>
+            
+            <!-- Tempat Alur Chat Muncul -->
+            <div class="chat-box" id="chatBox">
+                <p class="bot-msg"><em>"Halo... Aku di sini. Tuliskan apa saja yang ingin kamu lepaskan hari ini..."</em></p>
+            </div>
+
+            <!-- Input Ketikan -->
+            <div class="input-container">
+                <textarea id="textInput" placeholder="Ketik curhatanmu di sini..."></textarea>
+                <div class="action-buttons">
+                    <button id="sendBtn" class="btn-send">Kirim Cerita ➔</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Penjelasan Bawah -->
+    <section id="tentang" class="info-section">
+        <h3>Ruang Aman 100% Anonim</h3>
+        <p>
+            Wadah ini dibuat khusus untuk memendam emosi atau cerita yang sulit disampaikan ke orang sekitar. 
+            Identitasmu sepenuhnya rahasia. Hanya ada ruang kosong hangat yang siap menampung setiap helai ceritamu.
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
