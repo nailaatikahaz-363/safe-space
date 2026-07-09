@@ -26,7 +26,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
 
     // 3. JALUR PENGIRIMAN DATA KE EMAIL KAMU (Menggunakan Formspree)
     // GANTI TULISAN "DI_SINI" DENGAN ID FORMSPREE KAMU NANTI
-    fetch("https://formspree.io/f/xwvddaao"), {
+    fetch("https://formspree.io/f/xwvddaao", {
         method: "POST",
         body: JSON.stringify({ curhatan: isiCurhat }),
         headers: {
